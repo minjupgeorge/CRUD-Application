@@ -26,7 +26,7 @@ const EditCompany = () => {
 
     useEffect(() => {
         loadUserDetails();
-    }, [])
+    })
 
     const loadUserDetails = async() => {
         const response = await getUser(id);
@@ -34,7 +34,7 @@ const EditCompany = () => {
     }
 
     const editUserDetails = async() => {
-        const response = await editUser(user,id);
+        await editUser(user,id);
         navigate('/all');
     }
 
