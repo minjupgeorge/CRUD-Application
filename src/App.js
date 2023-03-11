@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import AddCompany from './Components/AddCompany';
+import AllCompanies from './Components/AllCompanies';
+import ClimateTech from './Components/ClimateTech';
+import EditCompany from './Components/EditCompany';
+import NavBar from './Components/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<ClimateTech />} />
+        <Route path="/add" element={<AddCompany />} />
+        <Route path="/all" element={<AllCompanies/>} />
+        <Route path="/edit/:id" element={<EditCompany />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default App ;

@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "Tapio",
+      "mission": "To shape a decarbonised future",
+      "location": "Brussels,Belgium",
+      "yearfounded": "2019",
+      "id": 1
+    },
+    {
+      "name": "FREYR Battery",
+      "mission": "To produce green battery cells ",
+      "location": "Lysaker, Norway",
+      "yearfounded": "2018",
+      "id": 2
+    },
+    {
+      "name": "Volta Trucks",
+      "mission": "Electric trucks for sustainable cities",
+      "location": "Stockholm, Sweden",
+      "yearfounded": "2019",
+      "id": 3
+    },
+    {
+      "name": "Greenfish",
+      "mission": "Specializes in sustainable development.",
+      "location": "Brussels,Belgium",
+      "yearfounded": "2010",
+      "id": 4
+    },
+    {
+      "name": "CO2logic",
+      "mission": "customised solutions to decrease carbon transition",
+      "location": "Brussels,Belgium",
+      "yearfounded": "2007",
+      "id": 5
+    },
+    {
+      "name": "Ecorus Engineering",
+      "mission": "Solar energy equipment supplier",
+      "location": "Diest, Belgium",
+      "yearfounded": "2010",
+      "id": 6
+    }
+  ]
+}
