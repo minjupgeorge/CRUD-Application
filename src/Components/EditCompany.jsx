@@ -26,7 +26,8 @@ const EditCompany = () => {
 
     useEffect(() => {
         loadUserDetails();
-    })
+        //eslint-disable-next-line
+    }, [])
 
     const loadUserDetails = async() => {
         const response = await getUser(id);
