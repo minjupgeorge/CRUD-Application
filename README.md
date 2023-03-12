@@ -18,10 +18,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm run json-server`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start using json-server in your project by running `npm i json-server`
+add  "json-server": "json-server --watch src/Database/db.json --host 127.0.0.1 --port 3002", to pacjage.json script .
 
 ### `npm run build`
 
