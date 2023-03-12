@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormGroup, FormControl, InputLabel, Input, Button, styled, Typography } from '@mui/material';
+import { FormGroup, FormControl, InputLabel, Input, Button, styled, Typography ,Box} from '@mui/material';
 import { addUser } from '../Service/api';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,9 +12,10 @@ const initialValue = {
 
 const Container = styled(FormGroup)`
     width: 50%;
-    margin: 5% 0 0 25%;
+    margin: 3% 0 0 25%;
     & > div {
         margin-top: 20px;
+        color: #111111;  
 `;
 
 const AddCompany = () => {
@@ -32,6 +33,16 @@ const AddCompany = () => {
     }
 
     return (
+        <Box
+      style={{
+        margin: "60px 0 0 0px",
+       backgroundImage: `url('${process.env.PUBLIC_URL}/assets/global.jpg')`,
+       backgroundSize: "cover",
+       backgroundPosition: "center",
+       height: "100vh", 
+          
+      }}
+    >
         <Container>
             <Typography variant="h4">Add Company</Typography>
             <FormControl>
@@ -54,6 +65,7 @@ const AddCompany = () => {
                 <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Add Company</Button>
             </FormControl>
         </Container>
+        </Box>
     )
 }
 
