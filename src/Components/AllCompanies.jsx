@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Table, TableHead, TableCell, TableRow, TableBody, styled, Button } from '@mui/material'
+import { Table, TableHead, TableCell, TableRow, TableBody, styled, Button,Box } from '@mui/material'
 import { getUsers,deleteUser } from '../Service/api';
 import { Link } from 'react-router-dom';
 
@@ -12,8 +12,7 @@ const StyledTable = styled(Table)`
 const THead = styled(TableRow)`
     & > th {
         font-size: 20px;
-        background: #800080;
-        color: #FFFFFF;
+        color: #00FF00;
     }
 `;
 
@@ -35,7 +34,7 @@ const AllCompanies = () => {
 
     const getAllUsers = async () => {
         let response = await getUsers();
-        console.log(response);
+        //console.log(response);
         setUsers(response.data);
     }
     const deleteUserData = async (id) => {
@@ -43,6 +42,16 @@ const AllCompanies = () => {
         getAllUsers();
      }
     return (
+        <Box
+      style={{
+        margin: "60px 0 0 0px",
+       backgroundImage: `url('${process.env.PUBLIC_URL}/assets/global.jpg')`,
+       backgroundSize: "cover",
+       backgroundPosition: "center",
+       height: "100vh", 
+          
+      }}
+    >
         <StyledTable>
             <TableHead>
                 <THead>
@@ -64,12 +73,13 @@ const AllCompanies = () => {
                         <TableCell>{user.yearfounded}</TableCell>
                         <TableCell>
                         <Button color="success" variant="contained" style={{marginRight:10}} component={Link} to={`/edit/${user.id}`}>Edit</Button>
-                            <Button color="secondary" variant="contained" onClick={()=>deleteUserData(user.id)}>Delete</Button> 
+                            <Button color="primary" variant="contained" onClick={()=>deleteUserData(user.id)}>Delete</Button> 
                         </TableCell>
                     </TRow>
                 ))}
             </TableBody>
         </StyledTable>
+        </Box>
     )
 }
 
