@@ -16,7 +16,7 @@ const ClimateTech = () => {
     >
      <Grid item md={5} lg={6} sx={{ my: 5, mx: 3 }}>
     <Typography 
-            variant="h3">Dream Job in Climatic Tech</Typography>
+            variant="h3"> Job in Climatic Tech </Typography>
     </Grid>
     <Grid item xs={6} md={4}>
             <Typography variant="h6" margin="20px">Climate technology is a growing industry that is creating new inventions to help stop or slow down the impact of climate change and to control the irreversible damage that’s already been done. 
