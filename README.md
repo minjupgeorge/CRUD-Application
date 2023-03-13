@@ -66,5 +66,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - AddCompanies
 ![Example screenshot](././public/assets/screenshotnewcompanies.png)
 
--Editpage
+- Editpage
 ![Example screenshot](././public/assets/screenshoteditpage.png)
