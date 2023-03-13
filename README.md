@@ -59,7 +59,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - ClimateTech
 ![Example screenshot](././public/assets/screenshotclimate.png)
+
 - AllCompanies
 ![Example screenshot](././public/assets/screenshotallcompanies.png)
+
 - AddCompanies
 ![Example screenshot](././public/assets/screenshotnewcompanies.png)
+
+-Editpage
+![Example screenshot](././public/assets/screenshoteditpage.png)
