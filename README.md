@@ -21,7 +21,7 @@ You may also see any lint errors in the console.
 ### `npm run json-server`
 
 Start using json-server in your project by running `npm i json-server`
-add  "json-server": "json-server --watch src/Database/db.json --host 127.0.0.1 --port 3002", to pacjage.json script .
+add  "json-server": "json-server --watch src/Database/db.json --host 127.0.0.1 --port 3002", to package json script
 
 ### `npm run build`
 
